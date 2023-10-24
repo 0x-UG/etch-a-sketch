@@ -1,8 +1,17 @@
 const container = document.querySelector('#container');
 
-const div = document.createElement('div');
-div.style.border = '1px solid black';
-div.style.width = '10px';
-div.style.height = '10px';
-
+/* const div = document.createElement('div');
+div.classList.add ('grid-item');
 container.appendChild(div);
+
+const div2 = document.createElement('div');
+div2.classList.add('grid-item');
+container.appendChild(div2);
+
+*/
+
+for (let i = 1; i <= 256; i++) {
+        const gridItem = document.createElement('div');
+        gridItem.classList.add('grid-item');
+        container.appendChild(gridItem);
+}
