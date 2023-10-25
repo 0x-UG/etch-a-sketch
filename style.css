@@ -2,7 +2,7 @@ h1 {
         text-align: center;
 }
 
-#container {
+/*#container {
         display: flex;
         justify-content: space-evenly;
         flex-wrap: wrap;
@@ -21,3 +21,18 @@ h1 {
         background: white;
         padding: 2px;
 }
+
+.grid-item:hover {
+        background-color: black;
+}
+*/
+
+.buttons {
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+        gap: 10px;
+}
+
+
+
