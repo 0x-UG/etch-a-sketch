@@ -48,7 +48,6 @@ function getUserInput () {
         } else if (input < 0 || input > 100) {
                 message.innerHTML = 'Invalid dimension! Input a number between 2 and 100';
         } else {
-                message.innerHTML = 'Have fun!!';
                 return input;
         }
 }
@@ -72,5 +71,3 @@ function resetBoard () {
         let divs = document.querySelectorAll('div');
         divs.forEach((div) => div.style.backgroundColor = 'white');
 }
-
-

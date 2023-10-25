@@ -5,6 +5,17 @@ body {
         justify-content: center;
 }
 
+@font-face {
+        font-family: 'Rainbow';
+        src: url('fonts/BubbleRainbow-VGdn0.ttf');
+}
+
+h1,
+h3,
+p {
+        font-family: 'Rainbow', 'Courier New', Courier;
+}
+
 #container {
         width: 500px;
         height: 500px;
@@ -12,8 +23,11 @@ body {
         border: 1px solid black;
 }
 
-.buttons {
+.buttons, #popup {
         padding-top: 20px;
+        display: flex;
+        gap: 30px;
+        font-family: 'Rainbow', 'Courier New', Courier;
 }
 
 #selection {
@@ -21,4 +35,37 @@ body {
         align-items: center;
         gap: 100px;
         padding-bottom: 20px;
+}
+
+#footer-logo {
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        border: 0 solid #0077b5;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+}
+
+#footer-logo:hover {
+        opacity: 0.7;
+        transform: scale(1.05);
+}
+
+.footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+}
+
+footer {
+        margin-top: 50px;
+
+}
+
+footer p {
+        margin: 0;
+        color: black;
+        font-size: 20px;
+        font-family: 'Rainbow', 'Courier New', Courier;
 }
